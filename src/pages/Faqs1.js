@@ -94,7 +94,7 @@ const Faqs1 = () => {
   };
 
   return (
-    <>
+    <move>
       <section className="faq-section">
         <h1 className="h1_faq">Frequently Asked Questions</h1>
         <div className="faq-container">
@@ -105,7 +105,7 @@ const Faqs1 = () => {
           </div>
         </div>
       </section>
-    </>
+    </move>
   );
 };
 
