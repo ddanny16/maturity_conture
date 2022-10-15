@@ -14,6 +14,7 @@ function FAQDATA({faq, index, toggleFAQ}) {
         {faq.question}
       </div>
 
+      
       <div className="faq-answer">
         {faq.answer}
       </div>
