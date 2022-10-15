@@ -18,9 +18,11 @@ const SectionSlide = () => {
 
   ];
   const containerStyles = {
-    width: "500px",
+    width: "80%",
     height: "280px",
     margin: "0 auto",
+    maxWidth: "50%",
+    minWidth:"260px",
   };
   return (
     <div>

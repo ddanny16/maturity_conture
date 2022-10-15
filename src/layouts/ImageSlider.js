@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import "./ImageSlider.scss"
 
 const slideStyles = {
     width: "100%",
@@ -13,8 +14,8 @@ const rightArrowStyles = {
     position: "absolute",
     top: "50%",
     transform: "translate(0, -50%)",
-    right: "32px",
-    fontSize: "45px",
+    right: "20px",
+    // fontSize: "45px",
     color: "#fff",
     zIndex: 1,
     cursor: "pointer",
@@ -24,8 +25,8 @@ const leftArrowStyles = {
     position: "absolute",
     top: "50%",
     transform: "translate(0, -50%)",
-    left: "32px",
-    fontSize: "45px",
+    left: "20px",
+    // fontSize: "45px",
     color: "#fff",
     zIndex: 1,
     cursor: "pointer",
@@ -45,6 +46,7 @@ const dotStyle = {
     margin: "0 3px",
     cursor: "pointer",
     fontSize: "20px",
+
 };
 
 const ImageSlider = ({ slides }) => {
@@ -70,7 +72,7 @@ const ImageSlider = ({ slides }) => {
     return (
         <div style={sliderStyles}>
             <div>
-                <div onClick={goToPrevious} style={leftArrowStyles}>
+                <div onClick={goToPrevious} style={leftArrowStyles} >
                     
                     <FaAngleLeft  size={50} style={{ color: "grey" , marginLeft:"-05px"}}  />
                 </div>
