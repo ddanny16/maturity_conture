@@ -188,7 +188,7 @@ const SectionSlide = () => {
           <img width="100%" height="100%" src={Ties} alt="/" />
         </Carousel.Item>
         <Carousel.Item>
-          <img width="100%" height="100%" src={Tieclip} alt="/" text="ties man" />
+          <img width="100%" height="100%" src={Tieclip} alt="/"/>
         </Carousel.Item>
         <Carousel.Item>
           <div className="mini">
