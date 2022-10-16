@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+import "./SectionSlideStyle.scss"
 import Carousel from 'better-react-carousel'
 import Busines from "../assets/img/Businesscard (2).png"
 import Barmat from "../assets/img/BarMat (2).png"
@@ -29,18 +31,18 @@ import Paperbags from "../assets/img/Paperbags (1).png"
 import Pens from "../assets/img/Pens (1).png"
 import Plasticwaterb from "../assets/img/plasticwaterb (1).png"
 import Pmug from "../assets/img/Pmug (1).png"
-// import Rollupban from "../assets/img/Rollupbanner (2).png"
-// import Scarfmuf from "../assets/img/scarfnmuffler (1).png"
-// import Smug from "../assets/img/Smug (1).png"
-// import Soccer from "../assets/img/Soccerball (1).png"
-// import Sock from "../assets/img/socks (1).png"
-// import Sportswear from "../assets/img/Sportswear (1).png"
-// import Stainless from "../assets/img/stainlesswaterb (1).png"
-// import Stickypad from "../assets/img/stickynotepad (2).png"
-// import Tshirts from "../assets/img/t-shirts (1).jpg"
-// import Tableclock from "../assets/img/tablecloxk (1).png"
-// import Ties from "../assets/img/Ties (1).png"
-// import Tieclip from "../assets/img/Tie Clip.jpg"
+import Rollupban from "../assets/img/Rollupbanner (2).png"
+import Scarfmuf from "../assets/img/scarfnmuffler (1).png"
+import Smug from "../assets/img/Smug (1).png"
+import Soccer from "../assets/img/Soccerball (1).png"
+import Sock from "../assets/img/socks (1).png"
+import Sportswear from "../assets/img/Sportswear (1).png"
+import Stainless from "../assets/img/stainlesswaterb (1).png"
+import Stickypad from "../assets/img/stickynotepad (2).png"
+import Tshirts from "../assets/img/t-shirts (1).jpg"
+import Tableclock from "../assets/img/tablecloxk (1).png"
+import Ties from "../assets/img/Ties (1).png"
+import Tieclip from "../assets/img/Tie Clip.jpg"
 // import Tint from "../assets/img/tintry (1).png"
 // import Torches from "../assets/img/torches (1).png"
 // import Towels from "../assets/img/towels (1).png"
@@ -62,7 +64,10 @@ const SectionSlide = () => {
 
   return (
     <div>
-      <Carousel dot={MyDot} cols={2} rows={1} gap={10} loop>
+      <h2 className='h2_nill'>
+        A view of some of our products
+      </h2>
+      <Carousel dot={MyDot} cols={6} rows={1} gap={10} loop>
         <Carousel.Item>
           <img width="100%" height="100%" src={Drive2} alt="/" />
         </Carousel.Item>
@@ -130,10 +135,10 @@ const SectionSlide = () => {
           <img width="100%" height="100%" src={Mousepads} alt="/" />
         </Carousel.Item>
         <Carousel.Item>
-          <img width="100%" height="100%" src={NamedNodeMap} alt="/" />
+          <img width="100%" height="100%" src={Rollupban} alt="lol" />
         </Carousel.Item>
         <Carousel.Item>
-          <img width="100%" height="100%" src={Nonwovenbags} alt="/" />      </Carousel.Item>
+          <img width="100%" height="100%" src={Nonwovenbags} alt="lol" />      </Carousel.Item>
         <Carousel.Item>
           <img width="100%" height="100%" src={Normflash} alt="/" />
         </Carousel.Item>
@@ -145,12 +150,55 @@ const SectionSlide = () => {
           <img width="100%" height="100%" src={Paperbags} alt="/" />
         </Carousel.Item>
         <Carousel.Item>
-          <img width="100%" height="100%" src={Pens} alt="/" />
+          <img width="100%" height="100%" src={Pens} alt="pad" />
         </Carousel.Item>
         <Carousel.Item>
           <img width="100%" height="100%" src={Plasticwaterb} alt="/" />      </Carousel.Item>
         <Carousel.Item>
           <img width="100%" height="100%" src={Pmug} alt="/" />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img width="100%" height="100%" src={Scarfmuf} alt="/" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" height="100%" src={Smug} alt="/" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" height="100%" src={Soccer} alt="pad" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" height="100%" src={Sock} alt="/" />      </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" height="100%" src={Sportswear} alt="/" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" height="100%" src={Stainless} alt="/" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" height="100%" src={Stickypad} alt="/" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" height="100%" src={Tshirts} alt="/" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" height="100%" src={Tableclock} alt="/" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" height="100%" src={Ties} alt="/" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img width="100%" height="100%" src={Tieclip} alt="/" text="ties man" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className="mini">
+            <h3 className="h3_text">
+              See more on our product page
+            </h3>
+            <button className="btn1">
+              <Link to="/project">Products</Link>
+            </button>
+          </div>
         </Carousel.Item>
       </Carousel>
     </div>
