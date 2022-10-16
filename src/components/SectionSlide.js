@@ -43,12 +43,7 @@ import Tshirts from "../assets/img/t-shirts (1).jpg"
 import Tableclock from "../assets/img/tablecloxk (1).png"
 import Ties from "../assets/img/Ties (1).png"
 import Tieclip from "../assets/img/Tie Clip.jpg"
-// import Tint from "../assets/img/tintry (1).png"
-// import Torches from "../assets/img/torches (1).png"
-// import Towels from "../assets/img/towels (1).png"
-// import Umbrella from "../assets/img/Umbrella (1).png"
-// import Wovenbadges from "../assets/img/wovenbadges (1).jpg"
-// import Wristbands from "../assets/img/wristbands (2).png"
+
 
 const SectionSlide = () => {
   const MyDot = ({ isActive }) => (
